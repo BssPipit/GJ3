@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>GJ Contact card</title>
+
+    <link href="index.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-mynav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">GJ Contact Card</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="fname" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ...
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" onclick="logout()">Logout</a></li>
+              </ul>
+            </li>
+        </div>
+      </div>
+    </nav>
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <title>GJ Contact Card</title>
+      <!-- Fonts -->
+      <link rel="stylesheet" href="fonts/thsarabunnew.css">
+      <!-- Main CSS and JS -->
+      <link rel="stylesheet" href="main_css.css">
+      <script type="text/javascript" src="main_js.js"></script>
+      <script type="text/javascript" src="contacts.js"></script>
+      <!-- favicon -->
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+      <link rel="manifest" href="favicon/site.json">
+      <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+      <link rel="shortcut icon" href="favicon/favicon.ico">
+      <meta name="apple-mobile-web-app-title" content="GJ Contact">
+      <meta name="application-name" content="GJ Contact">
+      <meta name="msapplication-TileColor" content="#ffc40d">
+      <meta name="msapplication-config" content="favicon/browserconfig.xml">
+      <meta name="theme-color" content="#ffffff">
+    </head>
+    
+    <body>
+      <header>Golden Jubilee Contact Card Ver 3.</header>
+      <nav>
+        <input type="text" id="searchbox" placeholder="Search..." onkeyup="search_contact('searchbox');" />
+      </nav>
+      <section id="search_result">
+        <div class="item_group"></div>
+      </section>
+      <script>
+        search_contact("searchbox");
+      </script>
+    </body>
+    
+    </html>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+  </body>
+</html>
